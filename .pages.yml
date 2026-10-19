@@ -1,0 +1,212 @@
+# Pages CMS configuration — turns the files in /content into simple forms
+# at https://app.pagescms.org. Only change this file if you are adding a
+# brand-new kind of field to the website.
+
+media:
+  input: assets/media
+  output: assets/media
+
+content:
+  # ---------------------------------------------------------------- WORK
+  - name: work
+    label: "🎬 Films & Projects"
+    type: file
+    path: content/work.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects
+        description: "Every film, series and ad. Drag to reorder. Projects with a video link also appear as playable frames in 'Selected Work'."
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: roles
+            label: Your role(s)
+            description: "Pick one or more."
+            type: select
+            options:
+              multiple: true
+              values: ["Director", "Editor", "Associate Editor", "Assistant Editor"]
+          - name: category
+            label: Type of project
+            type: select
+            options:
+              values: ["Feature Film", "Web Series", "Television", "Short Film", "Documentary", "Music Video", "Ad / Brand Film"]
+          - name: year
+            label: Year
+            description: "Optional, e.g. 2024"
+            type: string
+          - name: note
+            label: Short note
+            description: "Optional one-liner, e.g. 'Starring Vatsal Sheth' or 'Broadcast on ZEE Marathi'"
+            type: string
+          - name: status
+            label: Status
+            type: select
+            options:
+              values: ["Released", "Work in Progress"]
+          - name: video_link
+            label: Video link
+            description: "Paste a YouTube or Vimeo link. Leave empty if the film is not online."
+            type: string
+          - name: thumbnail
+            label: Custom thumbnail (optional)
+            description: "Leave empty to use the YouTube picture automatically. Use a wide (16:9) image."
+            type: image
+          - name: featured
+            label: Show bigger at the top of Selected Work
+            type: boolean
+
+  # ---------------------------------------------------------------- AWARDS
+  - name: awards
+    label: "🏆 Laurels & Awards"
+    type: file
+    path: content/awards.json
+    format: json
+    fields:
+      - name: awards
+        label: Laurels
+        description: "Shown in this order. Anything with 'Selection' or 'Nominated' in the result is shown in silver; wins in gold."
+        type: object
+        list: true
+        fields:
+          - name: result
+            label: Result
+            description: "e.g. Best Film, Winner, 2nd Place · Best Editing, Official Selection, Nominated"
+            type: string
+            required: true
+          - name: festival
+            label: Festival name
+            type: string
+            required: true
+          - name: year
+            label: Year
+            type: string
+          - name: film
+            label: For which film (optional)
+            type: string
+
+  # ---------------------------------------------------------------- PROFILE
+  - name: profile
+    label: "👤 Profile, About & Contact"
+    type: file
+    path: content/profile.json
+    format: json
+    fields:
+      - name: name
+        label: Full name
+        type: string
+        required: true
+      - name: signature
+        label: Short name (top-left corner & signature)
+        type: string
+      - name: title
+        label: Title under the name
+        type: string
+      - name: affiliation
+        label: Small gold line above the name
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: portrait
+        label: Main photo
+        description: "Black-and-white works best. A wide photo with the face on the right side looks best on the front page."
+        type: image
+      - name: intro
+        label: Short introduction (front page)
+        description: "2–3 sentences."
+        type: text
+      - name: bio
+        label: About me
+        description: "Leave an empty line between paragraphs."
+        type: text
+      - name: showreel_url
+        label: Showreel link
+        description: "Vimeo or YouTube link. The 'Play Showreel' button only appears when this is filled."
+        type: string
+      - name: showreel_password
+        label: Showreel password
+        description: "Shown under the video if the reel is password-protected. Leave empty if the reel is public."
+        type: string
+      - name: cv_file
+        label: CV (PDF)
+        description: "Upload a new PDF to replace the 'Download CV' link."
+        type: file
+      - name: email
+        label: Email
+        type: string
+      - name: phone
+        label: Phone
+        type: string
+      - name: whatsapp
+        label: WhatsApp number
+        description: "Include the country code, e.g. +91 94031 75900"
+        type: string
+      - name: phone_2
+        label: Second phone (optional)
+        type: string
+      - name: imdb
+        label: IMDb link
+        type: string
+      - name: instagram
+        label: Instagram link
+        type: string
+      - name: facebook
+        label: Facebook link
+        type: string
+      - name: linkedin
+        label: LinkedIn link
+        type: string
+      - name: youtube
+        label: YouTube channel link
+        type: string
+      - name: education
+        label: Education
+        type: object
+        list: true
+        fields:
+          - name: institution
+            label: Institution
+            type: string
+            required: true
+          - name: place
+            label: City
+            type: string
+          - name: qualification
+            label: Qualification
+            type: string
+      - name: software
+        label: Software
+        type: string
+        list: true
+      - name: languages
+        label: Languages
+        type: string
+        list: true
+      - name: production_houses
+        label: Production houses worked with
+        description: "Scrolls across the Filmography section."
+        type: string
+        list: true
+      - name: highlights
+        label: Other highlights (jury, theatre, teaching…)
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Heading
+            type: string
+          - name: text
+            label: Text
+            type: text
+      - name: quote
+        label: Favourite quote (optional)
+        type: string
+      - name: quote_by
+        label: Quote by
+        type: string
