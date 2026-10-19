@@ -1,0 +1,78 @@
+{
+  "name": "Vardhan Dhaimodkar",
+  "signature": "D Vardhan",
+  "title": "Director & Editor",
+  "affiliation": "GraFTII · Film and Television Institute of India",
+  "location": "Mumbai | Goa",
+  "portrait": "assets/media/vardhan-portrait.jpg",
+  "intro": "Film editor and director from Goa, trained at FTII Pune. Associate editor on Maharani and Nirmal Pathak Ki Ghar Wapsi; director of award-winning shorts and documentaries screened at festivals in India and abroad.",
+  "bio": "I was born in 1992 in the state of Goa. From an early age, my fascination with Bollywood and world cinema inspired me to pursue a degree in film studies. My extensive knowledge and enthusiasm for both film editing and direction synergize to create outstanding films.\n\nGiven that my passion aligns with my profession, my primary objective is to produce exceptional content and cultivate innovative techniques and styles within the realm of filmmaking.",
+  "showreel_url": "https://vimeo.com/805032167",
+  "showreel_password": "Vardhan27",
+  "cv_file": "assets/media/Vardhan-Dhaimodkar-CV.pdf",
+  "email": "vardhanfilms@yahoo.com",
+  "phone": "+91 94031 75900",
+  "whatsapp": "+91 94031 75900",
+  "phone_2": "+91 86928 25232",
+  "imdb": "https://www.imdb.com/name/nm8621799/",
+  "instagram": "",
+  "facebook": "",
+  "linkedin": "",
+  "youtube": "https://www.youtube.com/channel/UCJZjABp_owlNMBJ2xCPW_Vg",
+  "education": [
+    {
+      "institution": "Film and Television Institute of India",
+      "place": "Pune",
+      "qualification": "Post Graduate in Editing"
+    },
+    {
+      "institution": "St. Xavier's College",
+      "place": "Mapusa, Goa",
+      "qualification": "B.A. in Mass Communication & Videography"
+    },
+    {
+      "institution": "Vidya Prabodhini College",
+      "place": "Porvorim, Goa",
+      "qualification": "HSSC in Science"
+    }
+  ],
+  "software": [
+    "Avid Media Composer",
+    "Final Cut Pro 7",
+    "Adobe Premiere Pro",
+    "DaVinci Resolve"
+  ],
+  "languages": [
+    "English",
+    "Hindi",
+    "Konkani",
+    "Marathi"
+  ],
+  "production_houses": [
+    "Aatpat Productions",
+    "Rakesh Omprakash Mehra Pictures",
+    "Kangra Talkies",
+    "Kayra Films",
+    "Famous Studios",
+    "Saregama Yoodlee Films",
+    "River Bank Studios",
+    "Post Pond Productions",
+    "Doordarshan Kendra Panaji"
+  ],
+  "highlights": [
+    {
+      "title": "Young Jury, IFFI",
+      "text": "Served twice on the Young Jury for the Indian Panorama section at the International Film Festival of India (2012 and 2013), organised by Lokmat and the Entertainment Society of Goa."
+    },
+    {
+      "title": "Theatre & Radio",
+      "text": "Acted with regional theatre groups Abhivyakti, Rang Ixt and Rudreshwar, on stages across Goa and other states, and in short films and radio dramas for All India Radio."
+    },
+    {
+      "title": "Guest Lecturer",
+      "text": "Invited to teach media students at St. Xavier's College and Don Bosco College, Goa, and to share professional experience with students at FTII and other institutes."
+    }
+  ],
+  "quote": "The only way to do great work is to love what you do.",
+  "quote_by": "Steve Jobs"
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vardhan Dhaimodkar — Director & Editor</title>
+  <meta name="description" content="Vardhan Dhaimodkar (D Vardhan) — film editor and director, FTII Pune alumnus, based in Mumbai and Goa. Showreel, filmography, festival laurels and contact.">
+  <meta property="og:title" content="Vardhan Dhaimodkar — Director & Editor">
+  <meta property="og:description" content="Film editor and director. Showreel, filmography and festival laurels.">
+  <meta property="og:image" content="assets/media/vardhan-portrait.jpg">
+  <meta name="theme-color" content="#0b0a09">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230b0a09'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23d4a24c' stroke-width='2'/%3E%3Cpath d='M13 11.5v9l8-4.5z' fill='%23d4a24c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!--
+    ================================================================
+    YOU DO NOT NEED TO EDIT THIS FILE TO UPDATE THE WEBSITE.
+    All names, films, links, laurels and contact details live in the
+    "content" folder. See HOW-TO-UPDATE.md for the simple steps.
+    ================================================================
+  -->
+
+  <!-- Countdown leader shown briefly on first visit -->
+  <div class="leader" id="leader" aria-hidden="true">
+    <div class="leader-ring">
+      <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="88"/><line x1="100" y1="0" x2="100" y2="200"/><line x1="0" y1="100" x2="200" y2="100"/></svg>
+      <span class="leader-num" id="leader-num">3</span>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#top" data-bind="signature">D Vardhan</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#work">Work</a>
+      <a href="#credits">Credits</a>
+      <a href="#laurels">Laurels</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO / VIEWFINDER -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-image" id="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="letterbox letterbox-top"></div>
+      <div class="letterbox letterbox-bottom"></div>
+
+      <div class="viewfinder" aria-hidden="true">
+        <span class="vf-corner tl"></span><span class="vf-corner tr"></span>
+        <span class="vf-corner bl"></span><span class="vf-corner br"></span>
+        <div class="vf-top">
+          <span class="rec"><i></i>REC</span>
+          <span>4K · 24 FPS · 2.39:1</span>
+        </div>
+        <div class="vf-bottom">
+          <span id="timecode">00:00:00:00</span>
+          <span data-bind="location">Mumbai | Goa</span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow"><span data-bind="affiliation"></span></p>
+        <h1 class="hero-name" data-bind="name">Vardhan Dhaimodkar</h1>
+        <p class="hero-title" data-bind="title">Director & Editor</p>
+        <p class="hero-intro" data-bind="intro"></p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="play-reel" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Play Showreel
+          </button>
+          <a class="btn btn-ghost" href="#work">View Work</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#work" aria-label="Scroll to work">Scroll</a>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <p class="slate-label">Scene 01</p>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-sub">Click any frame to watch.</p>
+      </div>
+      <div class="filters" id="filters" role="tablist" aria-label="Filter work"></div>
+      <div class="reel-grid" id="reel-grid"></div>
+    </section>
+
+    <!-- CREDITS (end-credits roll) -->
+    <section class="section credits-section" id="credits">
+      <div class="section-head center">
+        <p class="slate-label">Scene 02</p>
+        <h2 class="section-title">Filmography</h2>
+      </div>
+      <div class="credits" id="credits-list"></div>
+      <div class="houses" id="houses-wrap" hidden>
+        <p class="houses-label">Has worked with</p>
+        <div class="marquee"><div class="marquee-track" id="houses"></div></div>
+      </div>
+    </section>
+
+    <!-- LAURELS -->
+    <section class="section" id="laurels">
+      <div class="section-head center">
+        <p class="slate-label">Scene 03</p>
+        <h2 class="section-title">Laurels</h2>
+        <p class="section-sub">Awards and official selections for films directed and edited.</p>
+      </div>
+      <div class="laurel-grid" id="laurel-grid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <figure class="about-photo">
+          <div class="frame" id="about-photo"></div>
+          <figcaption class="signature" data-bind="signature">D Vardhan</figcaption>
+        </figure>
+        <div class="about-text">
+          <p class="slate-label">Scene 04</p>
+          <h2 class="section-title">Behind the Lens</h2>
+          <div class="bio" id="bio"></div>
+          <blockquote class="quote" id="quote" hidden></blockquote>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact-block">
+          <h3>Education</h3>
+          <ul class="edu" id="education"></ul>
+        </div>
+        <div class="fact-block">
+          <h3>Cutting Room</h3>
+          <ul class="tags" id="software"></ul>
+          <h3>Languages</h3>
+          <ul class="tags" id="languages"></ul>
+        </div>
+      </div>
+
+      <div class="highlights" id="highlights"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <p class="slate-label">Final Scene</p>
+      <h2 class="contact-title">Let's make<br>a film.</h2>
+      <div class="contact-links" id="contact-links"></div>
+      <div class="social" id="social"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="fin">Fin.</span>
+    <span>© <span id="year"></span> <span data-bind="name">Vardhan Dhaimodkar</span></span>
+  </footer>
+
+  <!-- Video player popup -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close video">×</button>
+    <div class="lightbox-inner">
+      <div class="lightbox-frame" id="lightbox-frame"></div>
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <div class="load-error" id="load-error" hidden></div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

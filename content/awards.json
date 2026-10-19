@@ -1,0 +1,21 @@
+{
+  "awards": [
+    { "result": "Best Film", "festival": "Nashik International Film Festival", "year": "2012", "film": "" },
+    { "result": "3rd Place", "festival": "Chota Cinema · International Film Festival of India", "year": "2011", "film": "" },
+    { "result": "Winner", "festival": "Kosice International Monthly Film Festival", "year": "2020", "film": "" },
+    { "result": "Best Direction", "festival": "IRIS Film Festival", "year": "2014", "film": "" },
+    { "result": "Best Cinematography", "festival": "IRIS Film Festival", "year": "2014", "film": "" },
+    { "result": "2nd Place · Best Editing", "festival": "IRIS Film Festival", "year": "2014", "film": "" },
+    { "result": "Best Editing", "festival": "Frames Film Festival", "year": "", "film": "" },
+    { "result": "2nd Place · Best Documentary", "festival": "Shooting Stars Film Festival", "year": "2014", "film": "" },
+    { "result": "3rd Place", "festival": "Goa Documentary Film Festival", "year": "2013", "film": "" },
+    { "result": "Best Film", "festival": "Great Message Film Festival", "year": "2017", "film": "" },
+    { "result": "2nd Place · Best Film", "festival": "Goa Short Film Festival", "year": "2011", "film": "" },
+    { "result": "Official Selection", "festival": "River to River Florence Indian Film Festival", "year": "2020", "film": "" },
+    { "result": "Official Selection", "festival": "Dublin International Short Film and Music Festival", "year": "2020", "film": "" },
+    { "result": "Official Selection", "festival": "Rome Independent Prisma Awards", "year": "2020", "film": "" },
+    { "result": "Official Selection", "festival": "Chicago South Asian Film Festival", "year": "2021", "film": "" },
+    { "result": "Official Selection", "festival": "Cinevoyage International Film Festival", "year": "2021", "film": "" },
+    { "result": "Official Selection", "festival": "Tasveer South Asian Film Festival", "year": "2022", "film": "" }
+  ]
+}
